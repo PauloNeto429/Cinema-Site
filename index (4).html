@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineNeon — Filmes Favoritos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">CINE<em>NEON</em></span>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link active">Filmes</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-tag">// MINHA VITRINE PESSOAL</p>
+      <h1 class="hero-title">FILMES<br/><span class="highlight">QUE MARCARAM</span></h1>
+      <p class="hero-sub">Uma curadoria pessoal dos filmes que nunca vou esquecer.</p>
+      <div class="hero-deco"></div>
+    </section>
+
+    <section class="movies-section">
+      <div class="section-header">
+        <span class="section-tag">SELEÇÃO</span>
+        <h2>TOP FILMES</h2>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Card 1 -->
+        <article class="card" data-index="01">
+          <div class="card-img-wrap">
+            <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interestelar" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-genre">Sci-Fi · Drama</span>
+              <button class="btn-watch" onclick="mostrarAlerta('Interestelar', 2014, '⭐ 8.7/10')">VER DETALHES</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-number">01</span>
+            <h3 class="card-title">INTERESTELAR</h3>
+            <p class="card-year">2014 · Christopher Nolan</p>
+            <div class="card-bar"><span style="width: 87%"></span></div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card card--alt" data-index="02">
+          <div class="card-img-wrap">
+            <img src="https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg" alt="Homem-Aranha no Aranhaverso" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-genre">Animação · Ação</span>
+              <button class="btn-watch" onclick="mostrarAlerta('Homem-Aranha no Aranhaverso', 2018, '⭐ 8.4/10')">VER DETALHES</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-number">02</span>
+            <h3 class="card-title">ARANHAVERSO</h3>
+            <p class="card-year">2018 · Bob Persichetti</p>
+            <div class="card-bar"><span style="width: 84%"></span></div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card card--accent" data-index="03">
+          <div class="card-img-wrap">
+            <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="Batman: O Cavaleiro das Trevas" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-genre">Ação · Crime</span>
+              <button class="btn-watch" onclick="mostrarAlerta('Batman: O Cavaleiro das Trevas', 2008, '⭐ 9.0/10')">VER DETALHES</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-number">03</span>
+            <h3 class="card-title">THE DARK KNIGHT</h3>
+            <p class="card-year">2008 · Christopher Nolan</p>
+            <div class="card-bar"><span style="width: 90%"></span></div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" data-index="04">
+          <div class="card-img-wrap">
+            <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasita" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-genre">Drama · Thriller</span>
+              <button class="btn-watch" onclick="mostrarAlerta('Parasita', 2019, '⭐ 8.5/10')">VER DETALHES</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-number">04</span>
+            <h3 class="card-title">PARASITA</h3>
+            <p class="card-year">2019 · Bong Joon-ho</p>
+            <div class="card-bar"><span style="width: 85%"></span></div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card card--alt" data-index="05">
+          <div class="card-img-wrap">
+            <img src="https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg" alt="La La Land" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-genre">Musical · Romance</span>
+              <button class="btn-watch" onclick="mostrarAlerta('La La Land', 2016, '⭐ 8.0/10')">VER DETALHES</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-number">05</span>
+            <h3 class="card-title">LA LA LAND</h3>
+            <p class="card-year">2016 · Damien Chazelle</p>
+            <div class="card-bar"><span style="width: 80%"></span></div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card card--accent" data-index="06">
+          <div class="card-img-wrap">
+            <img src="https://image.tmdb.org/t/p/w500/d5NXSklpcvkmBiMFidoIbgTMFDC.jpg" alt="Duna" loading="lazy" />
+            <div class="card-overlay">
+              <span class="card-genre">Sci-Fi · Épico</span>
+              <button class="btn-watch" onclick="mostrarAlerta('Duna', 2021, '⭐ 8.0/10')">VER DETALHES</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-number">06</span>
+            <h3 class="card-title">DUNA</h3>
+            <p class="card-year">2021 · Denis Villeneuve</p>
+            <div class="card-bar"><span style="width: 80%"></span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com <span class="heart">♥</span> por <strong>CineNeon</strong> &nbsp;·&nbsp; <a href="contato.html">Entre em Contato</a></p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button class="modal-close" onclick="fecharModal()">✕</button>
+      <p class="modal-tag">// DETALHES DO FILME</p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-year"></p>
+      <p id="modal-rating"></p>
+      <button class="btn-modal-ok" onclick="fecharModal()">FECHAR</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
